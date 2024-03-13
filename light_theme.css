@@ -110,17 +110,11 @@ a:hover {
 
 .greeting {
     text-align: center;
-    padding: 300px;
+    padding: 200px;
     padding-top: 200px;
 }
 
-.second-page {
-    margin-top: 20px;
-    overflow: hidden; /* Clear floats */
-}
-
 .image-container {
-    float: left; /* Float the image to the left */
     margin-right: 20px;
 }
 
@@ -132,14 +126,14 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.text-container {
-    overflow: hidden; /* Clear floats */
-}
-
 .text-container p {
     float: left;
-    font-size: 1.6rem; /* Increase font size */
-    line-height: 1.8; /* Increase line spacing */
+}
+
+#kvote {
+    text-align: right;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
 @media (max-width: 952px) {
@@ -202,10 +196,6 @@ nav.shrink .checkbtn {
     line-height: 60px;
 }
 
-.rj {
-    width: 35px;
-}
-
 nav ul li.close-icon {
     display: none;
 }
@@ -247,4 +237,20 @@ nav ul li.close-icon i {
     .checkbtn {
         margin-right: 5px; /* Adjust margin for hamburger menu */
     }
+}
+
+footer {
+    background-color: #2c3e50; /* Set background color to blue */
+    color: white; /* Set text color to white for better contrast */
+    text-align: center;
+    padding: 20px 0; /* Add padding to the top and bottom */
+}
+
+.footer-content {
+    max-width: 800px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Add some vertical spacing between paragraphs */
 }
