@@ -99,7 +99,7 @@ a:hover {
     background-position: center;
     min-height: 100vh;
     padding-top: 200px;
-    text-shadow: 0 0 3px #2c3e50 ;
+    text-shadow: 0 0 3px #2c3e50;
 }
 
 @media only screen and (max-device-width: 1366px) {
@@ -202,10 +202,16 @@ nav ul li.close-icon i {
 }
 
 footer {
-    background-color: #477f99;
+    font-size: 0.6rem;
+    line-height: 5px;
+    background-color: #477f99cd;
     color: white;
     text-align: center;
     padding: 5px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    transition: bottom 0.1s ease-in;
 }
 
 .footer-content {
@@ -300,4 +306,40 @@ footer {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.content {
+    background-color: #ffffffcd;
+    height: fit-content;
+    padding: 0 50px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    flex: 1;
+    padding-top: 100px;
+}
+.content h1 {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px #477f99;
+    padding-bottom: 50px;
+}
+
+.content p {
+    margin: 20px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: justify;
+    letter-spacing: -0.1px;
+    line-height: 150%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#author {
+    text-align: right;
 }
