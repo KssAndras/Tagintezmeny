@@ -145,6 +145,10 @@ footer {
   padding-bottom: 50px;
 }
 
+.content h2 {
+  text-align: left;
+}
+
 .content p {
   margin: 20px;
   margin-left: 20px;
@@ -179,4 +183,5 @@ footer {
 .felsorolas li {
   list-style-type: disc;
   text-align: left;
+  margin-left: 80px;
 }
