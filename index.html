@@ -1,152 +1,93 @@
 <!DOCTYPE html>
 <html lang="hu">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kádas György EGYMI Karcagi Tagintézménye</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kádas György EGYMI Karcagi Tagintézménye</title>
 
-        <link rel="stylesheet" href="style.css" id="theme-style" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
-    </head>
+    <link rel="stylesheet" href="style.css" id="theme-style" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <nav class="navbar navbar-transparent">
-            <input type="checkbox" id="check" />
-            <label for="check" class="checkbtn">
-                <i class="fa fa-bars"></i>
-            </label>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <!-- Ide töltjük be a navbar-t JavaScript segítségével -->
 
-            <a href="index.html">
-                <img class="logo" src="Kepek/logo.png" width="80px" />
-            </a>
+    <div class="welcome parallax">
+      <h1>
+        Kádas György EGYMI <br />
+        Karcagi Tagintézmény
+      </h1>
+    </div>
+    <div class="greeting" id="greeting">
+      <h1>Tisztelettel köszöntöm Önt Iskolánk honlapján!</h1>
+      <p id="kvote">
+        "Úgy érezzük,hogy amit teszünk,csak csepp a tengerben,<br />Anélkül a
+        csepp nélkül azonban sekélyebb volna a tenger."<br />(Teréz anya)
+      </p>
 
-            <ul>
-                <li><a href="tanarblog.html">Tanár blog</a></li>
-                <li class="dropdown">
-                    <a href="#">Intézményünkről</a>
-                    <ul class="dropdown-content">
-                        <a href="#">Története</a>
-                        <a href="#">Életképek</a>
-                        <a href="#">Típusa</a>
-                        <a href="#">Tárgyi feltételek</a>
-                        <a href="#">Tantestület</a>
-                        <a href="#">Osztályok</a>
-                        <a href="#">Egyéb tevékenységek</a>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Fontos infók</a>
-                    <ul class="dropdown-content">
-                        <a href="#">E-KRÉTA belépés</a>
-                        <a href="#">e-ügyintézés</a>
-                        <a href="#">Elérhetőségek</a>
-                        <a href="#">Tanév rendje</a>
-                        <a href="#">Eseménynaptár</a>
-                        <a href="#">Dokumentumaink</a>
-                        <a href="#">Szülőknek</a>
-                        <a href="#">Pályázatok</a>
-                    </ul>
-                </li>
-                <li><a href="#">Aktualitások</a></li>
-                <li><a href="#">Szakiskola</a></li>
+      <img src="Kepek/osa.jpeg" alt="Ökrösné Sajtos Anett" class="image" />
+      <p>
+        Örülök érdeklődésének, és annak, hogy bemutathatjuk intézményünket,
+        tájékoztathatjuk jelenünkről, hétköznapjainkról, sikereinkről,
+        emlékezetes pillanatainkról.
+      </p>
+      <p>
+        Negyvenegy év..(pontosabban negyvenkettő)..egy fél emberöltő..sok-sok
+        év.Negyvenegy év..(pontosabban negyvenkettő)..egy fél emberöltő..sok-sok
+        év. Egy iskola életében 42 tanév: 42 tanévnyitót, több ezer itt tanult
+        diákot, tanítónéniket-bácsikat, kirándulást, nevetést és számtalan
+        csengő szót jelent.
+      </p>
+      <p>
+        A mi iskolánkban a karcagi Kádas György iskolában is sok minden
+        megváltozott az elmúlt évtizedek alatt. Az iskola hagyományos
+        oktatási-nevelési szerepei gyökeresen átalakultak, melyhez alkalmazkodni
+        kell. Olyan fiatalokat szeretnénk útra bocsátani, akik rendelkeznek az
+        életben való boldoguláshoz és érvényesüléshez szükséges ismeretekkel,
+        praktikus tudással, személyiségjegyekkel.
+      </p>
+      <p>
+        Tantestületünkre stabilitás, állandóság jellemző. Jól képzett, tudásukat
+        folyamatosan megújító, gyermekszerető gyógypedagógusok - pedagógusok
+        oktatják, nevelik a rájuk bízott diákokat.Mindennapi munkánkhoz irányt
+        mutatnak Goethe gondolatai:
+      </p>
 
-                <li class="dropdown">
-                    <a href="#">Diáksarok</a>
-                    <ul class="dropdown-content">
-                        <a href="#">Akikre büszkék vagyunk</a>
-                        <a href="#">Erzsébet Tábor</a>
-                    </ul>
-                </li>
-                <li><a href="#">Kollégium</a></li>
-                <li class="close-icon">
-                    <label for="check"><i class="fa fa-times"></i></label>
-                </li>
-            </ul>
-        </nav>
+      <p id="kvote2">
+        "... a gyermekeknek két dolgot kell adnunk: gyökereket és szárnyakat.
+        Gyökereket, amelyek tartást adnak, hogy tudják hova tartoznak, de
+        ugyanígy szárnyakat is, amelyek az egyiket a kényszereitől és
+        előítéleteitől szabadítják meg, a másiknak lehetőséget adnak új utakat
+        bejárni, vagy inkább repülni."
+      </p>
+      <p id="signature">Ökrösné Sajtos Anett <br />Tagintézmény vezető</p>
+    </div>
 
-        <div class="welcome parallax">
-            <h1>
-                Kádas György EGYMI <br />
-                Karcagi Tagintézmény
-            </h1>
-        </div>
-        <div class="greeting" id="greeting">
-            <h1>Tisztelettel köszöntöm Önt Iskolánk honlapján!</h1>
-            <p id="kvote">
-                "Úgy érezzük,hogy amit teszünk,csak csepp a tengerben,<br />Anélkül
-                a csepp nélkül azonban sekélyebb volna a tenger."<br />(Teréz
-                anya)
-            </p>
-
-            <img
-                src="Kepek/osa.jpeg"
-                alt="Ökrösné Sajtos Anett"
-                class="image"
-            />
-            <p>
-                Örülök érdeklődésének, és annak, hogy bemutathatjuk
-                intézményünket, tájékoztathatjuk jelenünkről, hétköznapjainkról,
-                sikereinkről, emlékezetes pillanatainkról.
-            </p>
-            <p>
-                Negyvenegy év..(pontosabban negyvenkettő)..egy fél
-                emberöltő..sok-sok év.Negyvenegy év..(pontosabban
-                negyvenkettő)..egy fél emberöltő..sok-sok év. Egy iskola
-                életében 42 tanév: 42 tanévnyitót, több ezer itt tanult diákot,
-                tanítónéniket-bácsikat, kirándulást, nevetést és számtalan
-                csengő szót jelent.
-            </p>
-            <p>
-                A mi iskolánkban a karcagi Kádas György iskolában is sok minden
-                megváltozott az elmúlt évtizedek alatt. Az iskola hagyományos
-                oktatási-nevelési szerepei gyökeresen átalakultak, melyhez
-                alkalmazkodni kell. Olyan fiatalokat szeretnénk útra bocsátani,
-                akik rendelkeznek az életben való boldoguláshoz és
-                érvényesüléshez szükséges ismeretekkel, praktikus tudással,
-                személyiségjegyekkel.
-            </p>
-            <p>
-                Tantestületünkre stabilitás, állandóság jellemző. Jól képzett,
-                tudásukat folyamatosan megújító, gyermekszerető gyógypedagógusok
-                - pedagógusok oktatják, nevelik a rájuk bízott
-                diákokat.Mindennapi munkánkhoz irányt mutatnak Goethe
-                gondolatai:
-            </p>
-
-            <p id="kvote2">
-                "... a gyermekeknek két dolgot kell adnunk: gyökereket és
-                szárnyakat. Gyökereket, amelyek tartást adnak, hogy tudják hova
-                tartoznak, de ugyanígy szárnyakat is, amelyek az egyiket a
-                kényszereitől és előítéleteitől szabadítják meg, a másiknak
-                lehetőséget adnak új utakat bejárni, vagy inkább repülni."
-            </p>
-            <p id="signature">Ökrösné Sajtos Anett <br />Tagintézmény vezető</p>
-        </div>
-
-        <footer>
-            <div class="footer-content footer" id="footer">
-                <p>
-                    Kádas György Egységes Gyógypedagógiai Módszertani Intézmény,
-                    Óvoda, Általános Iskola, Szakiskola, Készségfejlesztő Iskola
-                    és Kollégium Karcagi Tagintézménye
-                </p>
-                <p>5300 Karcag, Kisújszállási út 45.</p>
-                <p>Tel: 06 (59) 503 144 Mobil: 06 (30) 421 7668</p>
-                <p>E-mail címeink: iskola.kadas.karcag@karcagitk.hu</p>
-            </div>
-        </footer>
-
-        <script src="footer.js"></script>
-        <script src="scroll.js"></script>
-    </body>
+    <footer>
+      <div class="footer" id="footer">
+        <p>
+          Kádas György Egységes Gyógypedagógiai Módszertani Intézmény, Óvoda,
+          Általános Iskola, Szakiskola, Készségfejlesztő Iskola és Kollégium
+          Karcagi Tagintézménye
+        </p>
+        <p>5300 Karcag, Kisújszállási út 45.</p>
+        <p>Tel: 06 (59) 503 144 Mobil: 06 (30) 421 7668</p>
+        <p>E-mail címeink: iskola.kadas.karcag@karcagitk.hu</p>
+      </div>
+    </footer>
+    <script src="navbar.js"></script>
+    <script src="scroll.js"></script>
+  </body>
 </html>

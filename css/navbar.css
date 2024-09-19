@@ -1,0 +1,215 @@
+/* Navbar stílusok */
+nav {
+  background: #477f99;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  transition: height 0.5s ease;
+}
+
+.navbar {
+  transition: background-color 1.2s ease, height 0.5s ease;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+}
+
+.navbar-shrink {
+  height: 60px;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+  transition: margin-top 1.2s ease, margin-left 0.5s ease, font-size 0.5s ease;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-top: 25px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  transition: font-size 0.3s ease;
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .checkbtn {
+    display: block;
+    margin-right: 10px;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #477f99;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 15px 0;
+    line-height: 5px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .checkbtn {
+    display: block;
+    margin-right: 10px;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #477f99;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 15px 0;
+    line-height: 5px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+nav.shrink {
+  height: 60px;
+}
+
+nav.shrink .logo {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+nav.shrink ul li a {
+  line-height: 60px;
+}
+
+nav.shrink .checkbtn {
+  line-height: 60px;
+}
+
+nav ul li.close-icon {
+  display: none;
+}
+
+nav #check:checked ~ ul li.close-icon {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  line-height: 5px;
+}
+
+nav #check:checked ~ ul li.close-icon i {
+  color: white;
+  font-size: 30px;
+}
+
+nav ul li.close-icon {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+nav ul li.close-icon i {
+  color: white;
+  font-size: 20px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #477f99;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  line-height: 25px;
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #1b9bff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
