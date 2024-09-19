@@ -175,3 +175,8 @@ footer {
     font-size: 0.8rem;
   }
 }
+
+.felsorolas li {
+  list-style-type: disc;
+  text-align: left;
+}
