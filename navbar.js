@@ -18,8 +18,7 @@ document.getElementById("navbar-placeholder").innerHTML = `
                 <a href="tipus.html">Típusa</a>
                 <a href="targyifeltetel.html">Tárgyi feltételek</a>
                 <a href="http://kadaskisuj.hu/tantestulet#tagintezmeny">Tantestület</a>
-                <a href="#">Osztályok</a>
-                <a href="#">Egyéb tevékenységek</a>
+                <a href="tevekenysegek.html">Egyéb tevékenységek</a>
             </ul>
         </li>
         <li class="dropdown">
