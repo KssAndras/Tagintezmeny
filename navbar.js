@@ -9,16 +9,16 @@ document.getElementById("navbar-placeholder").innerHTML = `
         <img class="logo" src="Kepek/logo.png" width="80px" />
     </a>
     <ul>
-        <li><a href="tanarblog.html">Tanár blog</a></li>
         <li class="dropdown">
             <a href="#">Intézményünkről</a>
             <ul class="dropdown-content">
                 <a href="tortenete.html">Története</a>
                 <a href="eletkepek.html">Életképek</a>
                 <a href="tipus.html">Típusa</a>
-                <a href="targyifeltetel.html">Tárgyi feltételek</a>
+                <a href="tevekenysegek.html">Új név (Tárgyi és egyéb) </a>
+                <a href="osztalyok.html">Osztályok</a>
                 <a href="http://kadaskisuj.hu/tantestulet#tagintezmeny">Tantestület</a>
-                <a href="tevekenysegek.html">Egyéb tevékenységek</a>
+                <a href="tanarblog.html">Tanár blog</a>
             </ul>
         </li>
         <li class="dropdown">
@@ -29,13 +29,14 @@ document.getElementById("navbar-placeholder").innerHTML = `
                 <a href="#">Elérhetőségek</a>
                 <a href="#">Tanév rendje</a>
                 <a href="#">Eseménynaptár</a>
-                <a href="#">Dokumentumaink</a>
+                <a href="#">Mérések</a>
                 <a href="#">Szülőknek</a>
-                <a href="#">Pályázatok</a>
+                <a href="http://kadaskisuj.hu/node/5146">Iskolakert</a>
             </ul>
         </li>
-        <li><a href="#">Aktualitások</a></li>
-        <li><a href="#">Szakiskola</a></li>
+        <li><a href="aktualitasok.html">Aktualitások</a></li>
+        <li><a href="szakiskola.html">Szakiskola</a></li>
+        <li><a href="#">Kollégium</a></li>
         <li class="dropdown">
             <a href="#">Diáksarok</a>
             <ul class="dropdown-content">
@@ -43,7 +44,7 @@ document.getElementById("navbar-placeholder").innerHTML = `
                 <a href="#">Erzsébet Tábor</a>
             </ul>
         </li>
-        <li><a href="#">Kollégium</a></li>
+        
         <li class="close-icon">
             <label for="check"><i class="fa fa-times"></i></label>
         </li>
