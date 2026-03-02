@@ -28,7 +28,7 @@ document.getElementById("navbar-placeholder").innerHTML = `
                 <a href="http://kadaskisuj.hu/node/3999">e-ügyintézés</a>
                 <a href="#">Elérhetőségek</a>
                 <a href="#">Tanév rendje</a>
-                <a href="#">Eseménynaptár</a>
+                <a href="2526_Egyseges_munkaterv_esemenynaptar.pdf" target="_blank">Eseménynaptár</a>
                 <a href="#">Mérések</a>
                 <a href="#">Szülőknek</a>
                 <a href="http://kadaskisuj.hu/node/5146">Iskolakert</a>

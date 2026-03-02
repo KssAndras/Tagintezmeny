@@ -40,7 +40,7 @@ body {
   background-color: #eaeaea;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center 80px;
+  background-position: center;
   min-height: 100vh;
   padding-top: 200px;
 }
