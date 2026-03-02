@@ -6,7 +6,7 @@ document.getElementById("navbar-placeholder").innerHTML = `
         <i class="fa fa-bars"></i>
     </label>
     <a href="index.html">
-        <img class="logo" src="Kepek/logo.png" width="80px" />
+        <img class="logo" src="Kepek/logo.png" width="40px" />
     </a>
     <ul>
         <li class="dropdown">

@@ -35,11 +35,12 @@ body {
 }
 
 .welcome {
-  /* background-image: url(Kepek/background.jpg);*/
-  background-size: cover;
+  background-image: url(Kepek/Background.jpeg);
+  background-size: 630px;
+  background-color: #eaeaea;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 80px;
   min-height: 100vh;
   padding-top: 200px;
 }
