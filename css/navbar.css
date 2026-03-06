@@ -25,3 +25,9 @@
 .navbar-nav {
   margin-right: 50px;
 }
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
