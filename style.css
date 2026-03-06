@@ -1,21 +1,5 @@
 html {
   scroll-behavior: smooth;
-  height: 100%;
-  margin: 0;
-}
-main {
-  flex: 1;
-}
-
-.welcome {
-  color: #6b6a6a;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-  height: 100vh;
 }
 
 * {
@@ -34,6 +18,11 @@ body {
   color: #2c3e50;
 }
 
+main {
+  flex: 1;
+}
+
+/* WELCOME */
 .welcome {
   background-image: url(Kepek/Background.jpeg);
   background-size: 630px;
@@ -42,56 +31,31 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
-  padding-top: 200px;
-}
-
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
-
-/* Adjustments for iPhone 6 */
-@media only screen and (max-device-width: 375px) {
-  .logo {
-    width: 300px; /* Adjust logo size */
-    margin-top: 10px; /* Increase top margin */
-    margin-left: 10px; /* Adjust left margin */
-  }
-  .welcome h1 {
-    font-size: 2rem;
-  }
-
-  .checkbtn {
-    margin-right: 5px; /* Adjust margin for hamburger menu */
-  }
-}
-
-footer {
-  font-size: 0.6rem;
-  line-height: 15px;
-  background-color: #477f99;
-  color: white;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6b6a6a;
   text-align: center;
-  padding: 5px 0;
-  width: 100%;
-  bottom: 0;
-  transition: bottom 0.1s ease-in;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.footer-content {
-  max-width: 800px;
-  margin: 0 auto;
+@media (max-width: 768px) {
+  .welcome {
+    background-attachment: scroll;
+    background-size: contain;
+    font-size: 1.4rem;
+    padding-top: 70px;
+  }
 }
 
-.footer-content p {
-  margin: 5px 0;
-}
+/* GREETING */
 .greeting {
   background-color: #fff;
-  padding-top: 100px;
   padding: 80px;
 }
+
 .greeting img {
   width: 200px;
   float: left;
@@ -99,7 +63,6 @@ footer {
   margin-right: 40px;
   margin-bottom: 20px;
   border-radius: 25px;
-  overflow: hidden;
   box-shadow: 10px 10px 10px gray;
 }
 
@@ -116,35 +79,38 @@ footer {
   margin-bottom: 15px;
   font-size: 1.5rem;
   text-align: justify;
-  letter-spacing: -0.1px;
   line-height: 150%;
 }
 
-#kvote {
-  text-align: right;
-  margin-bottom: 30px;
-  font-style: italic;
+@media (max-width: 768px) {
+  .greeting {
+    padding: 20px;
+  }
+  .greeting img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 150px;
+  }
+  .greeting p {
+    font-size: 1.1rem;
+    margin-left: 0;
+  }
+  .greeting h1 {
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+  }
 }
 
-#signature {
-  text-align: right;
-  margin-top: 30px;
-}
-
-#kvote2 {
-  font-style: italic;
-}
-
+/* CONTENT */
 .content {
   background-color: #ffffffcd;
-  height: fit-content;
-  padding: 0 50px;
-  padding-top: 20px;
+  padding: 100px 50px 50px 50px;
   text-align: center;
   font-size: 1.2rem;
   flex: 1;
-  padding-top: 100px;
 }
+
 .content h1 {
   font-weight: bold;
   text-align: center;
@@ -159,37 +125,86 @@ footer {
 
 .content p {
   margin: 20px;
-  margin-left: 20px;
   margin-bottom: 15px;
   font-size: 1.5rem;
   text-align: justify;
-  letter-spacing: -0.1px;
   line-height: 150%;
 }
+
+@media (max-width: 768px) {
+  .content {
+    padding: 80px 15px 30px 15px;
+  }
+  .content p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  .content h1 {
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+  }
+  .content h2 {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+}
+
+/* EGYÉB */
+#kvote {
+  text-align: right;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+#kvote2 {
+  font-style: italic;
+}
+
+#signature {
+  text-align: right;
+  margin-top: 30px;
+}
+
+#author {
+  text-align: right;
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-#author {
-  text-align: right;
-}
 
-@media screen and (max-width: 768px) {
-  footer p {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 1100px) {
-  footer p {
-    font-size: 0.8rem;
+@media (max-width: 768px) {
+  .center {
+    width: 90%;
   }
 }
 
 .felsorolas li {
   list-style-type: disc;
   text-align: left;
-  margin-left: 80px;
+  margin-left: 40px;
+}
+
+/* FOOTER */
+footer {
+  font-size: 0.8rem;
+  line-height: 15px;
+  background-color: #477f99;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-content p {
+  margin: 5px 0;
 }
