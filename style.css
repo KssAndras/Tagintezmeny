@@ -208,3 +208,18 @@ footer {
 .footer-content p {
   margin: 5px 0;
 }
+
+.plakatok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.plakatok img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
