@@ -27,7 +27,7 @@ document.getElementById("navbar-placeholder").innerHTML = `
           <ul class="dropdown-menu" style="background-color: #477f99;">
             <li><a class="dropdown-item text-white" href="https://klik038402017.e-kreta.hu">E-KRÉTA belépés</a></li>
             <li><a class="dropdown-item text-white" href="http://kadaskisuj.hu/node/3999">e-ügyintézés</a></li>
-            <li><a class="dropdown-item text-white" href="#">Elérhetőségek</a></li>
+            <li><a class="dropdown-item text-white" href="elerhetosegek.html">Elérhetőségek</a></li>
             <li><a class="dropdown-item text-white" href="#">Tanév rendje</a></li>
             <li><a class="dropdown-item text-white" href="2526_Egyseges_munkaterv_esemenynaptar.pdf" target="_blank">Eseménynaptár</a></li>
             <li><a class="dropdown-item text-white" href="#">Mérések</a></li>

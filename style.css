@@ -223,3 +223,85 @@ footer {
   width: 100%;
   height: auto;
 }
+/* ELÉRHETŐSÉGEK CSS*/
+.elerhetoseg-section {
+  max-width: 860px;
+  margin: 40px auto;
+  margin-top: 90px;
+  padding: 0 20px 60px;
+}
+
+.elerhetoseg-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a3a5c;
+  border-bottom: 3px solid #1a3a5c;
+  padding-bottom: 10px;
+}
+
+.intezmeny-nev {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.kontakt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .kontakt-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.kontakt-card {
+  background: #f4f7fb;
+  border-left: 4px solid #1a3a5c;
+  border-radius: 6px;
+  padding: 18px 22px;
+}
+
+.kontakt-card.wide {
+  grid-column: 1 / -1;
+}
+
+.kontakt-card h2 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #1a3a5c;
+  margin-bottom: 10px;
+}
+
+.kontakt-card p {
+  margin: 0 0 5px;
+  font-size: 0.97rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.kontakt-card a {
+  color: #1a3a5c;
+  text-decoration: none;
+}
+
+.kontakt-card a:hover {
+  text-decoration: underline;
+}
+
+.kontakt-card .fa {
+  width: 18px;
+  color: #1a3a5c;
+  margin-right: 6px;
+}
+
+.elerhetoseg-section {
+  flex: 1;
+}
+/* ELÉRHETŐSÉGEK CSS VÉGE*/
